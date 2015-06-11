@@ -10,13 +10,11 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 
-/**
- * Android RestTask (REST) from the Android Recipes book.
- */
+
 public class RestTask extends AsyncTask<HttpUriRequest, Void, String>
 {
     public static final String HTTP_RESPONSE = "httpResponse";
-
+    private static final String TAG = "AARestTask";
     private Context mContext;
     private HttpClient mClient;
     private String mAction;
@@ -47,8 +45,8 @@ public class RestTask extends AsyncTask<HttpUriRequest, Void, String>
         }
         catch (Exception e)
         {
-            // TODO handle this properly
-            e.printStackTrace();
+            Log.e(TAG, "##### - IOException  " + e.getMessage());
+
             return "";
         }
     }
