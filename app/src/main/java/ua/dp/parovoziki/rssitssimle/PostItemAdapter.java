@@ -19,7 +19,7 @@ public class PostItemAdapter extends ArrayAdapter<PostData> {
     public PostItemAdapter(Context context, int textViewResourceId,
                            ArrayList<PostData> objects) {
         super(context, textViewResourceId, objects);
-        // TODO Auto-generated constructor stub
+
         myContext = (Activity) context;
         datas = objects;
     }
@@ -27,11 +27,6 @@ public class PostItemAdapter extends ArrayAdapter<PostData> {
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = myContext.getLayoutInflater();
         View rowView = inflater.inflate(R.layout.postitem, null);
-        ImageView thumbImageView = (ImageView) rowView
-                .findViewById(R.id.postThumb);
-//        if (datas.get(position).getPostThumbUrl() == null) {
-//            thumbImageView.setImageResource(R.drawable.habrlogo);
-//        }
 
         TextView postTitleView = (TextView) rowView
                 .findViewById(R.id.postTitleLabel);
