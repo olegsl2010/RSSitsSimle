@@ -41,7 +41,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-public class TestFragment extends Fragment {
+public class RssListFragment extends Fragment {
 
     private static final String TAG = "AATestFragment";
     private static final String TEST_URL = "http://habrahabr.ru/rss/hubs/";

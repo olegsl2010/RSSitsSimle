@@ -1,7 +1,6 @@
 package ua.dp.parovoziki.rssitssimle;
 
 import android.app.Activity;
-import android.content.res.Configuration;
 import android.os.Bundle;
 
 public class RssActivity extends Activity {
@@ -12,7 +11,7 @@ public class RssActivity extends Activity {
         setContentView(R.layout.acrivity_main);
 
         if (savedInstanceState == null) {
-            TestFragment trendsFragment = new TestFragment();
+            RssListFragment trendsFragment = new RssListFragment();
             getFragmentManager().beginTransaction().add(R.id.cont, trendsFragment).commit();
         }
     }
