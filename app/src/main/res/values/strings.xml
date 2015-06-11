@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RSSitsSimle</string>
+
+<string name="default_text">This is a test fragment</string>
+    <string name="back"></string>
+    <string name="update">Обновить RSS</string>
+    <string name="dialog_name">Получаю информацию</string>
+    <string name="wait_result">Подождите</string>
+    <string name="no_internet_connection">Нет соединения с интернетом !!!</string>
+</resources>
