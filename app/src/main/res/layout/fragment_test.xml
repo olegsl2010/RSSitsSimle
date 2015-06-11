@@ -26,13 +26,16 @@
                 android:layout_weight="1"
                 android:layout_gravity="center_vertical" />
 
-            <Button
+            <com.gc.materialdesign.views.ButtonRectangle
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/update"
+                android:layout_gravity="center_vertical"
                 android:id="@+id/btnUpdateRss"
+                android:text="@string/update"
                 android:layout_weight="1"
-                android:layout_gravity="center_vertical" />
+                android:background="#1E88E5"
+                />
+
 
         </LinearLayout>
 

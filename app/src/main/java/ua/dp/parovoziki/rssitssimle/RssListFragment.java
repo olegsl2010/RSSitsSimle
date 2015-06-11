@@ -22,6 +22,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.gc.materialdesign.views.ButtonRectangle;
+
 import org.apache.http.client.methods.HttpGet;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -49,7 +51,7 @@ public class RssListFragment extends Fragment {
     ImageView imageLogo;
     ProgressDialog progress;
     ListView ourListView;
-    Button updateButton;
+    ButtonRectangle updateButton;
     private String url;
     private String title;
     private ArrayList<PostData> listData;
@@ -72,7 +74,8 @@ public class RssListFragment extends Fragment {
 
         toWebView();
 
-        updateButton=(Button)v.findViewById(R.id.btnUpdateRss);
+        updateButton=(ButtonRectangle)v.findViewById(R.id.btnUpdateRss);
+//        updateButton.setRippleSpeed(90F);
         updateButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 getListContent();
