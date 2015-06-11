@@ -1,7 +1,5 @@
 <resources>
-    <string name="app_name">RSSitsSimle</string>
-
-<string name="default_text">This is a test fragment</string>
+    <string name="app_name" translatable="false">RSSitsSimle</string>
     <string name="back"></string>
     <string name="update">Обновить RSS</string>
     <string name="dialog_name">Получаю информацию</string>
