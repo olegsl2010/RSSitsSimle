@@ -189,11 +189,11 @@ public class RssListFragment extends Fragment {
                 }
 
             }catch (SAXException e) {
-                e.printStackTrace();
+                Log.e(TAG, "##### - SAXException  " + e.getMessage());
             } catch (IOException e) {
-                e.printStackTrace();
+                Log.e(TAG, "##### - IOException  " + e.getMessage());
             } catch (ParserConfigurationException e) {
-                e.printStackTrace();
+                Log.e(TAG,"##### - ParserConfigurationException  "+ e.getMessage());
             }
         }
 
